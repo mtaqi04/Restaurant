@@ -8,6 +8,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.headerbar{
+    display: none;
+}
+
+.searchicon{
+    display: block;
+}
+
 .logo img {
     width: 115px; 
 }
@@ -40,4 +48,99 @@
     padding: 0 15px;
     font-size: 14px;
     font-weight: bold;
+}
+
+.account {
+    flex: 0.1;
+}
+
+.account ul {
+    display: flex;
+    justify-content: end;
+}
+
+.account ul li {
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.bar i:hover {
+    color: rgb(253, 57, 8);
+}
+
+.search {
+    display: none;
+    width: 200px;
+    justify-content: center;
+}
+
+.search input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.srchicon {
+    background-color: rgb(255, 210, 210);
+    display: block;
+    padding: 4px 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+    .header .nav,.header .account{
+        display: none;
+    }
+    .search{
+        width: 60vw;
+    }
+    .bar{
+       display: block; 
+       cursor: pointer;
+    }
+    .headerbar{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        bottom: 0;
+        right: -100%;
+        background-color: rgb(252, 231, 216);
+    }
+    .headerbar .account, .headerbar .nav{
+        display: block;
+        font-size: 18px;
+    }
+    .bar .fa-xmark{
+        display: none;
+        top: 20px;
+        right: 5w;
+        position: absolute;
+        font-size: 25px;
+    }
+    .headerbar .nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .headerbar .nav li{
+        width: 96vw;
+        margin: 10px 0;
+        padding: 15px 30px;
+        box-shadow: 0 2px 15px rgb(252, 193, 169);
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .headerbar .account{
+        line-height: 40px;
+        margin-top: 60px;
+        background-color: rgb(252,210,182);
+        padding: 15px;
+    }
+    .headerbar .account ul{
+        justify-content: space-between;
+    }
 }
