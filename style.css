@@ -108,6 +108,7 @@
         width: 100%;
         bottom: 0;
         right: -100%;
+        transition: all 0.5s;
         background-color: rgb(252, 231, 216);
     }
     .headerbar .account, .headerbar .nav{
