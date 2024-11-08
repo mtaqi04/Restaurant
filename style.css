@@ -269,6 +269,77 @@
     font-size: 13px;
 }
 
+.main_slide3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.main_slide3 .fav-head {
+    text-align: center;
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+.main_slide .fav-head h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.main_slide3 .fav-head p{
+    font-size: 13px;
+    text-align: center;
+}
+
+.main_slide3 .fav-food{
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.main_slide3 .fav-food .item{
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(119, 119, 119, 0.438);
+    width: 220px;
+    padding: 15px;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main_slide3 .fav-food .item div{
+    height: 160px;
+    margin-bottom: 15px;
+}
+
+.main_slide3 .fav-food .item img{
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.main_slide3 .fav-price{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main_slide3 .dsgn{
+    background-color: rgb(255, 214, 176);
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 10px;
+}
+
 @media only screen and (max-width: 768px){
     .header .nav,.header .account{
         display: none;
@@ -325,6 +396,34 @@
     .headerbar .account ul{
         justify-content: space-between;
     }
+    .foodimg{
+        flex: 1;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .foodimg img{
+        width: 70vw;
+    }
+    .question{
+        flex: 1;
+        margin-top: 30px;
+    }
+    .question h2{
+        font-size: 25px;
+    }
+    .q-ans div:nth-child(2) p{
+        font-size: 11px;
+    }
+    .main_slide3{
+        margin-top: 100px;
+    }
+    .main_slide3 .dsgn{
+        height: 60%;
+    }
+    .main_slide3 .fav-head{
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 550px){
@@ -354,4 +453,28 @@
     .main_slide div:nth-child(2) img{
         width: 70vw;
     }
+    .food-items{
+        padding: 10px 0;
+    }
+    .item{
+        width: 60%;
+        padding: 30px 5px;
+    }
+    .item h3{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .main_slide3 .fav-head{
+        width: 100%;
+    }
+    .main_slide3 .fav-head h3{
+        font-size: 25px;
+    }
+    .main_slide3 .fav-head p{
+        font-size: 11px;
+    }
+    .main_slide3 .dsgn{
+        display: none;
+    }
+    
 }
